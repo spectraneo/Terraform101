@@ -1,0 +1,49 @@
+# ======================================================================
+# Terraform .gitignore (Enterprise-ready baseline)
+# Combines official GitHub template + HashiCorp recommendations
+# ======================================================================
+
+# Local .terraform directories
+**/.terraform/*
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Lock info file (transient, created during apply)
+.terraform.tfstate.lock.info
+
+# Sensitive variable files (do NOT commit secrets)
+*.tfvars
+*.tfvars.json
+
+# Override files (local-only customizations)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you explicitly want
+# !example_override.tf
+
+# Terraform plan output files (optional)
+# Ignore saved plans from "terraform plan -out=..."
+*tfplan*
+# Uncomment below if you also want to ignore destroy plan outputs
+# planout
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Graph output files (optional)
+# *.dot
+
+# Lock file for provider versions
+# Recommended to commit for reproducible builds
+# .terraform.lock.hcl
